@@ -1,8 +1,9 @@
 **Query:** Fetch the following data for completed order items in July of 2023
-ORDER_ID
-ORDER_ITEM_SEQ_ID
-SHOPIFY_ORDER_ID
-SHOPIFY_PRODUCT_ID
+
+- ORDER_ID
+- ORDER_ITEM_SEQ_ID
+- SHOPIFY_ORDER_ID
+- SHOPIFY_PRODUCT_ID
 
 **Query cost**: 5591.60
 
