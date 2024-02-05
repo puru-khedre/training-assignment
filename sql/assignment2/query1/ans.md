@@ -42,4 +42,6 @@ join order_status os
 join product p
 	on p.PRODUCT_ID = oi.PRODUCT_ID
 join product_type pt
+	on p.PRODUCT_TYPE_ID = pt.PRODUCT_TYPE_ID
+	and pt.IS_PHYSICAL = "Y";
 ```
