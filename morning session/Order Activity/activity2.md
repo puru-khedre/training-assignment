@@ -1,23 +1,27 @@
 # Activity 2
 
-Do the following from webtools and see the effect of changes made on party profile page:
-
-      Create a person by name John Liston.
-      Assign Customer role to created person.
-      Change name of the person to John D Liston.
-      Add email address to customer profile.
-      Add Billing phone to customer profile.
-      Add Shipping phone to customer profile.
-      Add Shipping Address to customer profile.
-      Add Billing Address to customer profile.
-      Make billing and shipping address same.
-      Change the purpose of billing address to General correspondence address.
-      Delete(Expire) email address and create new.
-      Delete(Expire) billing address and add new.
-      Delete(Expire) shipping address and add new.
+      Order Id: HWMDEMO1001
+      Order Status: Approved
+      Order Items: any two products from catalog.
+      Order Items Status: Approved
+      Customer Name: Mark Tailor
+      Shipping Address:
+      HotWax Media Inc.
+      136 S MAIN ST #A200
+      Salt Lake City, UT,USA
+      Zip: 84101
+      Phone: 877.736.4080
+      Email Address: mark.tailor@hotwaxmedia.com
+      Shipping Method: UPS Ground
+      Billing Method: Credit Card - Discover
+      Billing Address:
+      HotWax Media Inc.
+      136 S MAIN ST #A200
+      Salt Lake City, UT, USA
+      Zip: 84101
+      Phone: 877.736.4080
 
 ## Solution
-
 
 ### Creting order
 
