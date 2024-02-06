@@ -41,7 +41,7 @@ shipmentId: HwmDemo1000
     <OrderStatus orderStatusId="HWMDEMO1002CMPL" orderId="HWMDEMO1002" statusId="ORDER_COMPLETED" statusUserLogin="mark-tailor" />
    ```
 
-    ![alt text](<Screenshot from 2024-02-06 14-25-49.png>)
+    ![alt text](<../images/Screenshot from 2024-02-06 14-25-49.png>)
 
 3. Adding order items
 
@@ -52,7 +52,7 @@ shipmentId: HwmDemo1000
     <OrderStatus orderStatusId="HWMDEMO10022CMPL" orderId="HWMDEMO1002" orderItemSeqId="2" statusId="ITEM_COMPLETED" />
    ```
 
-    ![alt text](<Screenshot from 2024-02-06 14-27-34.png>)
+    ![alt text](<../images/Screenshot from 2024-02-06 14-27-34.png>)
 
 4. Creating location for billing and shipping
 
@@ -69,8 +69,8 @@ shipmentId: HwmDemo1000
     <OrderContactMech orderId="HWMDEMO1002" contactMechId="HWDEMOADDR1002" contactMechPurposeTypeId="SHIPPING_LOCATION"/>
    ```
 
-   ![alt text](<Screenshot from 2024-02-06 15-02-45.png>)
-   ![alt text](<Screenshot from 2024-02-06 15-02-56.png>)
+   ![alt text](<../images/Screenshot from 2024-02-06 15-02-45.png>)
+   ![alt text](<../images/Screenshot from 2024-02-06 15-02-56.png>)
 
 6. Adding order roles for bill and ship to customer
 
@@ -79,7 +79,7 @@ shipmentId: HwmDemo1000
     <OrderRole orderId="HWMDEMO1002" roleTypeId="BILL_TO_CUSTOMER" partyId="MarkCustomer"/>
    ```
 
-   ![alt text](<Screenshot from 2024-02-06 15-03-03.png>)
+   ![alt text](<../images/Screenshot from 2024-02-06 15-03-03.png>)
 
 7. Creating telecom number
 
@@ -96,7 +96,7 @@ shipmentId: HwmDemo1000
     <OrderContactMech orderId="HWMDEMO1002" contactMechId="10023" contactMechPurposeTypeId="PRIMARY_EMAIL"/>
    ```
 
-   ![alt text](<Screenshot from 2024-02-06 15-04-06.png>)
+   ![alt text](<../images/Screenshot from 2024-02-06 15-04-06.png>)
 
 8. Creating ship groups and association with order items
 
@@ -106,7 +106,7 @@ shipmentId: HwmDemo1000
     <OrderItemShipGroupAssoc orderId="HWMDEMO1002" orderItemSeqId="2" shipGroupSeqId="1" quantity="3"/>
    ```
 
-   ![alt text](<Screenshot from 2024-02-06 15-05-25.png>)
+   ![alt text](<../images/Screenshot from 2024-02-06 15-05-25.png>)
 
 10. Creating payment method
 
@@ -121,4 +121,4 @@ shipmentId: HwmDemo1000
     <OrderPaymentPreference orderPaymentPreferenceId="HWDEMO1002PAYPREF" orderId="HWMDEMO1002" paymentMethodTypeId="CREDIT_CARD" paymentMethodId="PAYPREF1002" statusId="PAYMENT_AUTHORIZED" />
    ```
 
-    ![alt text](<Screenshot from 2024-02-06 15-06-40.png>)
+    ![alt text](<../images/Screenshot from 2024-02-06 15-06-40.png>)
