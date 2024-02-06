@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Activity 3
-=======
-# Activity 2
->>>>>>> 92e272d30e5883eb89881185fc1a69a8186353e1
 
     Order Id: HWMDEMO1001
     Order Status: Cancelled
