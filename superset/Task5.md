@@ -73,7 +73,7 @@ def send(sub, body, recipant):
     
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
-    server.login("purushottam.khedre@hotwaxsystems.com", "phggciqiwlfkgseu")
+    server.login("purushottam.khedre@hotwaxsystems.com", "************gseu")
     text = msg.as_string()
     server.sendmail("purushottam.khedre@hotwaxsystems.com", recipant, text)
     server.quit()
