@@ -1,0 +1,119 @@
+<!-- Here I need to create mapping of shopify order data from there API into Apache ofbiz data model -->
+<entity-engine-xml>
+    <!-- Creating a person as customer party -->
+    <Party
+        partyId="MUSKAN_PAHWA"
+        externalId="7133450502397"
+        partyTypeId="PERSON"
+        statusId="PARTY_DISABLED"
+        preferredCurrencyUomId="USD"
+        createdDate="2024-01-19T04:06:05-05:00"
+        createdStamp="2024-01-19T04:06:05-05:00"
+        lastUpdatedStamp="2024-02-12T06:11:22-05:00"
+    />
+    <Person
+        partyId="MUSKAN_PAHWA"
+        firstName="Muskan"
+        lastName="Pahwa"
+    />
+
+    <!-- A role of the person is customer -->
+    <PartyRole
+        partyId="MUSKAN_PAHWA"
+        roleTypeId="CUSTOMER"
+    />
+
+    <!-- Various contact mech for the customer -->
+    <ContactMech
+        contactMechId="MUSKAN_PAHWA_EMAIL"
+        contactMechTypeId="EMAIL_ADDRESS"
+        infoString="customer@example.com"
+    />
+    <ContactMech
+        contactMechId="MUSKAN_PAHWA_POSTAL"
+        contactMechTypeId="POSTAL_ADDRESS"
+    />
+    <PostalAddress
+        contactMechId="MUSKAN_PAHWA_POSTAL"
+        toName="Muskan Pahwa"
+        attnName="Muskan Pahwa"
+        address1="12th Street Northwest"
+        city="Washington"
+        postalCode="20008"
+        countryGeoId="USA"
+        stateProvinceGeoId="DC"
+    />
+
+    <!-- Linking contact mechs with customer party -->
+    <PartyContactMech
+        partyId="MUSKAN_PAHWA"
+        contactMechId="MUSKAN_PAHWA_EMAIL"
+        fromDate="2024-01-19T04:06:05-05:00"
+    />
+    <PartyContactMech
+        partyId="MUSKAN_PAHWA"
+        contactMechId="MUSKAN_PAHWA_POSTAL"
+        fromDate="2024-01-19T04:06:05-05:00"
+    />
+
+    <!-- Adding purposes to contact mechanisms -->
+    <PartyContactMechPurpose
+        partyId="MUSKAN_PAHWA"
+        contactMechId="MUSKAN_PAHWA_EMAIL"
+        contactMechPurposeTypeId="PRIMARY_EMAIL"
+        fromDate="2024-01-19T04:06:05-05:00"
+    />
+    <PartyContactMechPurpose
+        partyId="MUSKAN_PAHWA"
+        contactMechId="MUSKAN_PAHWA_EMAIL"
+        contactMechPurposeTypeId="ORDER_EMAIL"
+        fromDate="2024-01-19T04:06:05-05:00"
+    />
+    <PartyContactMechPurpose
+        partyId="MUSKAN_PAHWA"
+        contactMechId="MUSKAN_PAHWA_POSTAL"
+        contactMechPurposeTypeId="GENERAL_LOCATION"
+        fromDate="2024-01-19T04:06:05-05:00"
+    />
+    <PartyContactMechPurpose
+        partyId="MUSKAN_PAHWA"
+        contactMechId="MUSKAN_PAHWA_POSTAL"
+        contactMechPurposeTypeId="BILLING_LOCATION"
+        fromDate="2024-01-19T04:06:05-05:00"
+    />
+    <PartyContactMechPurpose
+        partyId="MUSKAN_PAHWA"
+        contactMechId="MUSKAN_PAHWA_POSTAL"
+        contactMechPurposeTypeId="SHIPPING_LOCATION"
+        fromDate="2024-01-19T04:06:05-05:00"
+    />
+
+    <!-- creating a order using OrderHeader entity -->
+    <OrderHeader
+        orderId="SHOPIFY_ORD_MAPPING1"
+        externalId="5524206485757"
+        orderName="#2012"
+        salesChannelEnumId="WEB_SALES_CHANNEL"
+        statusId="ORDER_CREATED"
+        currencyUom="USD"
+        grandTotal="50"
+        orderDate="2024-02-12T06:09:33-05:00"
+        lastUpdatedStamp="2024-02-12T06:09:38-05:00"
+    />
+    <OrderContactMech
+        orderId="SHOPIFY_ORD_MAPPING1"
+        contactMechId="MUSKAN_PAHWA_EMAIL"
+        contactMechPurposeTypeId="ORDER_EMAIL"
+    />
+
+    <!-- Creating order items -->
+    <OrderItem
+        orderId="SHOPIFY_ORD_MAPPING1"
+        orderItemSeqId="0001"
+        externalId="13665341899005"
+        productId="8279602168061"
+        quantity="1"
+        unitPrice="50"
+    />
+
+</entity-engine-xml>
