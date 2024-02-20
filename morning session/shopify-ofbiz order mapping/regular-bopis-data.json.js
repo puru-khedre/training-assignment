@@ -22,36 +22,36 @@ const obj = {
     },
     "closed_at": null,
     "company": null,
-    "confirmed": true,
+    // "confirmed": true,
     // "contact_email": "customer@example.com",
     // "created_at": "2024-02-12T06:09:33-05:00",
 
     // "currency": "USD",
 
     // Pricing information below
-    "current_subtotal_price": "50.00",
-    "current_subtotal_price_set": {
-      "shop_money": {
-        "amount": "50.00",
-        "currency_code": "USD"
-      },
-      "presentment_money": {
-        "amount": "50.00",
-        "currency_code": "USD"
-      }
-    },
-    "current_total_additional_fees_set": null,
-    "current_total_discounts": "0.00",
-    "current_total_discounts_set": {
-      "shop_money": {
-        "amount": "0.00",
-        "currency_code": "USD"
-      },
-      "presentment_money": {
-        "amount": "0.00",
-        "currency_code": "USD"
-      }
-    },
+    // "current_subtotal_price": "50.00",
+    // "current_subtotal_price_set": {
+    //   "shop_money": {
+    //     "amount": "50.00",
+    //     "currency_code": "USD"
+    //   },
+    //   "presentment_money": {
+    //     "amount": "50.00",
+    //     "currency_code": "USD"
+    //   }
+    // },
+    // "current_total_additional_fees_set": null,
+    // "current_total_discounts": "0.00",
+    // "current_total_discounts_set": {
+    //   "shop_money": {
+    //     "amount": "0.00",
+    //     "currency_code": "USD"
+    //   },
+    //   "presentment_money": {
+    //     "amount": "0.00",
+    //     "currency_code": "USD"
+    //   }
+    // },
     "current_total_duties_set": null,
     "current_total_price": "50.00",
     "current_total_price_set": {
@@ -82,7 +82,7 @@ const obj = {
     "discount_codes": [],
     // "email": "customer@example.com",
     "estimated_taxes": false,
-    "financial_status": "authorized",
+    // "financial_status": "authorized",
     "fulfillment_status": null,
     "landing_site": "/",
     "landing_site_ref": null,
@@ -123,28 +123,28 @@ const obj = {
     "taxes_included": false,
     "test": true,
     "token": "",
-    "total_discounts": "0.00",
-    "total_discounts_set": {
-      "shop_money": {
-        "amount": "0.00",
-        "currency_code": "USD"
-      },
-      "presentment_money": {
-        "amount": "0.00",
-        "currency_code": "USD"
-      }
-    },
-    "total_line_items_price": "50.00",
-    "total_line_items_price_set": {
-      "shop_money": {
-        "amount": "50.00",
-        "currency_code": "USD"
-      },
-      "presentment_money": {
-        "amount": "50.00",
-        "currency_code": "USD"
-      }
-    },
+    // "total_discounts": "0.00",
+    // "total_discounts_set": {
+    //   "shop_money": {
+    //     "amount": "0.00",
+    //     "currency_code": "USD"
+    //   },
+    //   "presentment_money": {
+    //     "amount": "0.00",
+    //     "currency_code": "USD"
+    //   }
+    // },
+    // "total_line_items_price": "50.00",
+    // "total_line_items_price_set": {
+    //   "shop_money": {
+    //     "amount": "50.00",
+    //     "currency_code": "USD"
+    //   },
+    //   "presentment_money": {
+    //     "amount": "50.00",
+    //     "currency_code": "USD"
+    //   }
+    // },
     "total_outstanding": "0.00",
     "total_price": "50.00",
     "total_price_set": {
@@ -157,16 +157,16 @@ const obj = {
         "currency_code": "USD"
       }
     },
-    "total_shipping_price_set": {
-      "shop_money": {
-        "amount": "0.00",
-        "currency_code": "USD"
-      },
-      "presentment_money": {
-        "amount": "0.00",
-        "currency_code": "USD"
-      }
-    },
+    // "total_shipping_price_set": {
+    //   "shop_money": {
+    //     "amount": "0.00",
+    //     "currency_code": "USD"
+    //   },
+    //   "presentment_money": {
+    //     "amount": "0.00",
+    //     "currency_code": "USD"
+    //   }
+    // },
     "total_tax": "0.00",
     "total_tax_set": {
       "shop_money": {
@@ -254,10 +254,10 @@ const obj = {
         "fulfillable_quantity": 1,
         "fulfillment_service": "manual",
         "fulfillment_status": null,
-        "gift_card": false,
+        // "gift_card": false,
         "grams": 50,
-        "name": "Inter Miami Messi Away Jersey",
-        "price": "50.00",
+        // "name": "Inter Miami Messi Away Jersey",
+        // "price": "50.00",
         "price_set": {
           "shop_money": {
             "amount": "50.00",
@@ -268,26 +268,26 @@ const obj = {
             "currency_code": "USD"
           }
         },
-        "product_exists": true,
-        "product_id": 8279602168061,
+        // "product_exists": true,
+        // "product_id": 8279602168061,
         "properties": [],
         // "quantity": 1,
         "requires_shipping": true,
-        "sku": "123456789",
+        // "sku": "123456789",
         "taxable": true,
-        "title": "Inter Miami Messi Away Jersey",
-        "total_discount": "0.00",
-        "total_discount_set": {
-          "shop_money": {
-            "amount": "0.00",
-            "currency_code": "USD"
-          },
-          "presentment_money": {
-            "amount": "0.00",
-            "currency_code": "USD"
-          }
-        },
-        "variant_id": 44502451716349,
+        // "title": "Inter Miami Messi Away Jersey",
+        // "total_discount": "0.00",
+        // "total_discount_set": {
+        //   "shop_money": {
+        //     "amount": "0.00",
+        //     "currency_code": "USD"
+        //   },
+        //   "presentment_money": {
+        //     "amount": "0.00",
+        //     "currency_code": "USD"
+        //   }
+        // },
+        // "variant_id": 44502451716349,
         "variant_inventory_management": "shopify",
         "variant_title": null,
         "vendor": "HC Demo",

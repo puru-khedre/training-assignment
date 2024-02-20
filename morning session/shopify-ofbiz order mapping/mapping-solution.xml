@@ -88,23 +88,87 @@
         fromDate="2024-01-19T04:06:05-05:00"
     />
 
+    <!-- Creating a virtual product -->
+    <Product
+        productId="SHOPIFY_ORD_VIRTUAL"
+        productName="Inter Miami Messi Away Jersey"
+        productTypeId="GOOD"
+        isVirtual="Y"
+        isVariant="N"
+    />
+
+    <!-- creting a variant product -->
+    <Product
+        productId="SHOPIFY_ORD_VARIANT"
+        productTypeId="FINSHED_GOOD"
+        isVirtual="N"
+        isVariant="Y"
+    />
+
+    <!-- Create association between virtual and variant product -->
+    <ProductAssoc
+        productAssocTypeId="PRODUCT_VARIANT"
+        productId="SHOPIFY_ORD_VIRTUAL"
+        productIdTo="SHOPIFY_ORD_VARIANT"
+        fromDate="2024-01-19T04:06:05-05:00"
+    />
+
+    <GoodIdentificationType
+        goodIdentificationTypeId="SHOPIFY_ORD_ID"
+        description="Shopify Order ID"
+        hasTable="N"
+    />
+
+    <!-- Storing shopify order id in good identification -->
+    <GoodIdentification
+        productId="SHOPIFY_ORD_VIRTUAL"
+        goodIdentificationTypeId="SHOPIFY_ORD_ID"
+        idValue="8279602168061"
+    />
+
+    <GoodIdentification
+        productId="SHOPIFY_ORD_VARIANT"
+        goodIdentificationTypeId="SHOPIFY_ORD_ID"
+        idValue="44502451716349"
+    />
+
+    <GoodIdentification
+        productId="SHOPIFY_ORD_VARIANT"
+        goodIdentificationTypeId="SKU"
+        idValue="123456789"
+    />
+
     <!-- creating a order using OrderHeader entity -->
     <OrderHeader
         orderId="SHOPIFY_ORD_MAPPING1"
         externalId="5524206485757"
         orderName="#2012"
         salesChannelEnumId="WEB_SALES_CHANNEL"
-        statusId="ORDER_CREATED"
+        statusId="ORDER_CONFIRMED"
         currencyUom="USD"
         grandTotal="50"
         orderDate="2024-02-12T06:09:33-05:00"
         lastUpdatedStamp="2024-02-12T06:09:38-05:00"
     />
+
+    <!-- Adding contact details for the order -->
     <OrderContactMech
         orderId="SHOPIFY_ORD_MAPPING1"
         contactMechId="MUSKAN_PAHWA_EMAIL"
         contactMechPurposeTypeId="ORDER_EMAIL"
     />
+    <OrderContactMech
+        orderId="SHOPIFY_ORD_MAPPING1"
+        contactMechId="MUSKAN_PAHWA_POSTAL"
+        contactMechPurposeTypeId="SHIPPING_LOCATION"
+    />
+
+    <OrderContactMech
+        orderId="SHOPIFY_ORD_MAPPING1"
+        contactMechId="MUSKAN_PAHWA_POSTAL"
+        contactMechPurposeTypeId="BILLING_LOCATION"
+    />
+
 
     <!-- Creating order items -->
     <OrderItem
@@ -114,6 +178,72 @@
         productId="8279602168061"
         quantity="1"
         unitPrice="50"
+    />
+
+    <!-- Creating ship group for the order items -->
+    <OrderItemShipGroup
+        orderId="SHOPIFY_ORD_MAPPING1"
+        shipGroupSeqId="0001"
+        shipmentMethodTypeId="STORE_PICKUP"
+        carrierRoleTypeId="CARRIER"
+        isGift="N"
+    />
+
+    <!-- Creating orderItemShipGroupAssoc -->
+    <OrderItemShipGroupAssoc
+        orderId="SHOPIFY_ORD_MAPPING1"
+        orderItemSeqId="0001"
+        shipGroupSeqId="0001"
+        quantity="1"
+    />
+
+    <!-- Creating order payment preferences -->
+    <OrderPaymentPreference
+        orderId="SHOPIFY_ORD_MAPPING1"
+        orderPaymentPreferenceId="SHOPIFY_ORD1_PAYPREF"
+        statusId="PAYMENT_AUTHORIZED"
+    />
+
+    <!-- Adding status to order header -->
+    <OrderStatus
+        orderId="SHOPIFY_ORD_MAPPING1"
+        statusId="ORDER_CREATED"
+        statusDatetime="2024-02-12T06:09:38-05:00"
+    />
+    <OrderStatus
+        orderId="SHOPIFY_ORD_MAPPING1"
+        statusId="ORDER_APPROVED"
+        statusDatetime="2024-02-12T06:09:38-05:00"
+    />
+    <OrderStatus
+        orderId="SHOPIFY_ORD_MAPPING1"
+        statusId="ORDER_CONFIRMED"
+        statusDatetime="2024-02-12T06:09:38-05:00"
+    />
+
+    <!-- Adding order adjustments for discounts and shipping charges -->
+    <OrderAdjustment
+        orderId="SHOPIFY_ORD_MAPPING1"
+        orderAdjustmentId="SHOPIFY_ORD1_SHIPADJ"
+        OrderItemShipGroup="0001"
+        amount="0"
+        orderAdjustmentTypeId="SHIPPING_CHARGES"
+        description="Shipping Charge"
+    />
+    <OrderAdjustment
+        orderId="SHOPIFY_ORD_MAPPING1"
+        orderItemSeqId="0001"
+        orderAdjustmentId="SHOPIFY_ORD1_DISCADJ"
+        amount="0"
+        orderAdjustmentTypeId="DISCOUNT_ADJUSTMENT"
+        description="Discounts"
+    />
+    <OrderAdjustment
+        orderId="SHOPIFY_ORD_MAPPING1"
+        orderAdjustmentId="SHOPIFY_ORD_DISCADJ"
+        amount="0"
+        orderAdjustmentTypeId="DISCOUNT_ADJUSTMENT"
+        description="Discounts"
     />
 
 </entity-engine-xml>
