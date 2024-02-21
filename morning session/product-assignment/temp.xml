@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <ProdCatalog
+        catalogName="Puru catalog v2"
+        prodCatalogId="9002"
+    />
+
+    <ProductCategory
+        productCategoryId="PURU_CATALOG_CATEv2"
+        productCategoryTypeId="CATALOG_CATEGORY"
+    />
+
+    <ProdCatalogCategory
+        fromDate="2024-01-18 00:00:00.0"
+        prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT"
+        prodCatalogId="9001"
+        productCategoryId="PURU_CATALOG_CATE"
+    />
+
+    <ProductCategoryRollup
+        parentProductCategoryId="PURU_CATALOG_CATEv2"
+        productCategoryId="BEST-SELL-2"
+        fromDate="2024-01-30 00:00:00.0"
+    />
+
+    <ProductStoreCatalog
+        fromDate="2024-01-27 09:54:09.472"
+        prodCatalogId="9002"
+        productStoreId="9000"
+    />
+
+    <Product
+        internalName="my virtual product"
+        isVariant="N"
+        isVirtual="Y"
+        productTypeId="FINISHED_GOOD"
+        virtualVariantMethodEnum="VV_VARIANTTREE"
+    />
+
+    <ProductCategoryMember
+        fromDate="2024-01-30 00:00:00.0"
+        productCategoryId="PURU_CATEGORY"
+        productId="MY_NORMAL_PROD1"
+    />
+
+    <ProductFeature
+        description="small size"
+        productFeatureId="my_small_size_feat"
+        productFeatureTypeId="SIZE"
+    />
+
+    <ProductPrice
+        productId="MY_VIRTUAL_PROD1"
+        productPricePurposeId="PURCHASE"
+        productPriceTypeId="DEFAULT_PRICE"
+        currencyUomId="USD"
+        fromDate="2024-02-21 14:57:28.0"
+        price="60.000"
+        productStoreGroupId="_NA_"
+    />
+    <Product
+        description="Assembled Pick Gizmo Basket. Assembled during picking."
+        internalName="Assembled Pick Gizmo Basket"
+        productId="GZ-BASKET-PICK"
+        productName="Gizmo Basket Assembly Pick"
+        productTypeId="MARKETING_PKG_PICK"
+    />
+</entity-engine-xml>
