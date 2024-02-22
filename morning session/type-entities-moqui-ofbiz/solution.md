@@ -1,6 +1,6 @@
 # Type entities in Moqui/OFBiz
 
-## Some Type entities in OFBiz
+## Some of the Type entities in OFBiz
 
 | TABLE_NAME                     | REMAINS IN MOQUI |
 | ------------------------------ | ---------------- |
@@ -83,13 +83,13 @@ Here let's take an example of `FACILITY_TYPE` entity in OFBiz
 | VIRTUAL_FACILITY    |                     | Virtual Facility                                  |
 | WAREHOUSE           | DISTRIBUTION_CENTER | Warehouse                                         |
 
-**Steps to convert OFBiz type table to enumrations in Moqui:**
+**Steps to convert OFBiz type table to enumerations in Moqui:**
 
-1. Create a entry of `FacilityType` in `EnumerationType` table of moqui
-2. Add all the values of `FACILITY_TYPE_ID` column in `Enumeration` table of moqui
-3. In each record the value of `ENUM_TYPE_ID` should be `FacilityType`
+1. Create an entry of `FacilityType` in `EnumerationType` table of Moqui
+2. Add all the values of `FACILITY_TYPE_ID` column in `Enumeration` table of Moqui
+3. In each record, the value of `ENUM_TYPE_ID` should be `FacilityType`
 
-**After conversion this is actual values in `Enumeration` table of moqui, specially to manage facility types:**
+**After conversion these is actual values in `Enumeration` table of moqui, specially to manage facility types:**
 
 | ENUM_ID         | ENUM_TYPE_ID | DESCRIPTION     |
 | --------------- | ------------ | --------------- |
@@ -108,14 +108,14 @@ Here let's take an example of `FACILITY_TYPE` entity in OFBiz
 | FcTpRoom        | FacilityType | Room            |
 | FcTpWarehouse   | FacilityType | Warehouse       |
 
-**Keypoints:**
+**Key points:**
 
-- The column `ENUM_ID` in `Enumeration` table of moqui is containing different type values
-- The column `ENUM_TYPE_ID` in `Enumeration` table show that the enum are of which type
-- In our case we create a new enum type `FacilityType` so that we can distinguish that this enum values are used for representing different facilities type
-- Also the `ENUM_TYPE_ID` is act as purpose of corresponding enum values
-- `DESCRIPTION` column is for displaying the description of enum values
-- Now there is `FACILITY_TYPE_ENUM_ID` column in `Facility` table in moqui instead of `FACILITY_TYPE_ID` in ofbiz which is used to store the enum value of that facility type
-- In OFBiz, the facility entity is having column `FACILITY_TYPE_ID` which is foreign key to `FACILITY_TYPE` table
-- In Moqui, the facility entity is having column `FACILITY_TYPE_ENUM_ID` which is foreign key to `Enumeration` table
-- Same way we can remove the type entities and manage them by leveraging the enumerations
+- The column `ENUM_ID` in `Enumeration` table of moqui contains different type values
+- The column `ENUM_TYPE_ID` in `Enumeration` table shows that the enum is of which type
+- In our case, we create a new enum type `FacilityType` so that we can distinguish that these enum values are used for representing different facility type
+- Also, the `ENUM_TYPE_ID` acts as the purpose of corresponding enum values
+- A `DESCRIPTION` column is for displaying the description of enum values
+- Now there is `FACILITY_TYPE_ENUM_ID` column in `Facility` table in Moqui instead of `FACILITY_TYPE_ID` in OFBiz which is used to store the enum value of that facility type
+- In OFBiz, the facility entity has column `FACILITY_TYPE_ID` which is a foreign key to `FACILITY_TYPE` table
+- In Moqui, the facility entity has column `FACILITY_TYPE_ENUM_ID` which is a foreign key to `Enumeration` table
+- Same way we can remove the type of entities and manage them by leveraging the enumerations
