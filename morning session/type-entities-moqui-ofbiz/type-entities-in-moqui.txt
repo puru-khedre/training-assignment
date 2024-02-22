@@ -1,0 +1,30 @@
++--------------+-------------------------------------+------------+---------------------+
+| TABLE_SCHEMA | TABLE_NAME                          | TABLE_TYPE | CREATE_TIME         |
++--------------+-------------------------------------+------------+---------------------+
+| moqui        | ENUMERATION_TYPE                    | BASE TABLE | 2024-02-12 16:59:21 |
+| moqui        | ROLE_TYPE                           | BASE TABLE | 2024-02-12 16:55:34 |
+| moqui        | FACILITY_LOCATION_TYPE              | BASE TABLE | 2024-02-12 17:01:49 |
+| moqui        | PARTY_SETTING_TYPE                  | BASE TABLE | 2024-02-12 17:04:15 |
+| moqui        | SHIPMENT_BOX_TYPE                   | BASE TABLE | 2024-02-12 17:06:02 |
+| moqui        | SHIPPING_GATEWAY_BOX_TYPE           | BASE TABLE | 2024-02-12 17:06:11 |
+| moqui        | STATUS_TYPE                         | BASE TABLE | 2024-02-12 16:59:25 |
+| moqui        | UOM_DIMENSION_TYPE                  | BASE TABLE | 2024-02-12 16:59:28 |
+| moqui        | BENEFIT_TYPE                        | BASE TABLE | 2024-02-12 16:53:22 |
+| moqui        | CARRIER_SHIPMENT_BOX_TYPE           | BASE TABLE | 2024-02-12 16:58:32 |
+| moqui        | COMMUNICATION_EVENT_TYPE            | BASE TABLE | 2024-02-12 17:04:28 |
+| moqui        | FINANCIAL_ACCOUNT_TYPE              | BASE TABLE | 2024-02-12 17:00:51 |
++--------------+-------------------------------------+------------+---------------------+
+| moqui        | DATABASE_TYPE                       | BASE TABLE | 2024-02-12 17:00:21 |
+| moqui        | EMPL_POSITION_CLASS_WORK_TYPE       | BASE TABLE | 2024-02-12 17:02:18 |
+| moqui        | FACILITY_BOX_TYPE                   | BASE TABLE | 2024-02-12 17:01:44 |
+| moqui        | FORM_CONFIG_USER_TYPE               | BASE TABLE | 2024-02-12 17:00:01 |
+| moqui        | INSTANCE_HOST_TYPE                  | BASE TABLE | 2024-02-12 17:00:21 |
+| moqui        | INSTANCE_IMAGE_TYPE                 | BASE TABLE | 2024-02-12 17:00:22 |
+| moqui        | INVOICE_TYPE_TRANS_TYPE             | BASE TABLE | 2024-02-12 17:02:35 |
+| moqui        | MEASUREMENT_TYPE                    | BASE TABLE | 2024-02-12 17:06:26 |
+| moqui        | PAYMENT_METHOD_FILE_TYPE            | BASE TABLE | 2024-02-12 17:01:22 |
+| moqui        | PRODUCT_DIMENSION_TYPE              | BASE TABLE | 2024-02-12 17:04:47 |
+| moqui        | PRODUCT_METER_TYPE                  | BASE TABLE | 2024-02-12 17:05:30 |
+| moqui        | SYSTEM_MESSAGE_TYPE                 | BASE TABLE | 2024-02-12 17:00:37 |
+| moqui        | TIME_PERIOD_TYPE                    | BASE TABLE | 2024-02-12 17:04:35 |
++--------------+-------------------------------------+------------+---------------------+
