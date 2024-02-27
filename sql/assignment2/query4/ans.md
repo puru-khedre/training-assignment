@@ -1,9 +1,14 @@
-**Query:** Fetch the following data for completed order items in July of 2023
+**Query:** Fetch the following columns for created orders. These should be sales orders.
 
 - ORDER_ID
-- ORDER_ITEM_SEQ_ID
-- SHOPIFY_ORDER_ID
-- SHOPIFY_PRODUCT_ID
+- TOTAL_AMOUNT
+- PAYMENT_METHOD
+- SHOPIFY_ORDER_NAME
+
+NOTE:
+
+1. The total amount represents the total amount of the order.
+2. The payment method is the method by which payment was made, like Cash, mastercard, visa, paypal, etc.
 
 **Query cost**: 5591.60
 
