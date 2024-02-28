@@ -1,6 +1,6 @@
 **Query:** Fetch all the customers created in June 2023.
 
-**Query cost**: 41501637.52
+**Query cost**: 4641796
 
 ```sql
 select
@@ -10,11 +10,7 @@ select
 	pr.ROLE_TYPE_ID
 from party p
 join party_role pr
-on
-	p.PARTY_TYPE_ID = "PERSON"
-	and pr.ROLE_TYPE_ID = "CUSTOMER"
-where
-	extract(month from p.CREATED_DATE) = 7
-	and extract(year from p.CREATED_DATE) = 2023
+on pr.ROLE_TYPE_ID = "CUSTOMER"
+where p.CREATED_DATE between "2023-06-01" and "2023-06-30"
 ;
 ```
