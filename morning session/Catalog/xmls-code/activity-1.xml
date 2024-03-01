@@ -1,0 +1,115 @@
+<entity-engine-xml>
+    <ProdCatalog catalogName="Shoes Catalog" prodCatalogId="SHOE_CATALOG" />
+    <ProductCategory
+        categoryName="Browse Root"
+        productCategoryId="browse_root"
+        productCategoryTypeId="CATALOG_CATEGORY"
+    />
+    <ProductCategory
+        categoryName="Promotions category"
+        productCategoryId="promotions"
+        productCategoryTypeId="CATALOG_CATEGORY"
+    />
+    <ProductCategory
+        categoryName="Men category"
+        productCategoryId="mens_category"
+        productCategoryTypeId="QUICKADD_CATEGORY"
+    />
+    <ProductCategory
+        categoryName="Women category"
+        productCategoryId="women_category"
+        productCategoryTypeId="QUICKADD_CATEGORY"
+    />
+    <ProductCategory
+        categoryName="Children category"
+        productCategoryId="children_category"
+        productCategoryTypeId="QUICKADD_CATEGORY"
+    />
+    <ProductCategory
+        categoryName="Mens Sports category"
+        productCategoryId="MSports"
+        productCategoryTypeId="QUICKADD_CATEGORY"
+    />
+    <ProductCategory
+        categoryName="Mens Formal category"
+        productCategoryId="MFormal"
+        productCategoryTypeId="QUICKADD_CATEGORY"
+    />
+    <ProductCategory
+        categoryName="Mens Party category"
+        productCategoryId="MParty"
+        productCategoryTypeId="QUICKADD_CATEGORY"
+    />
+    <ProductCategory
+        categoryName="Womens Sports category"
+        productCategoryId="WSports"
+        productCategoryTypeId="QUICKADD_CATEGORY"
+    />
+    <ProductCategory
+        categoryName="Womens Formal category"
+        productCategoryId="WFormal"
+        productCategoryTypeId="QUICKADD_CATEGORY"
+    />
+    <ProductCategory
+        categoryName="Womens Party category"
+        productCategoryId="WParty"
+        productCategoryTypeId="QUICKADD_CATEGORY"
+    />
+    <ProdCatalogCategory
+        fromDate="2024-02-28 00:00:00.0"
+        prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT"
+        prodCatalogId="SHOE_CATALOG"
+        productCategoryId="browse_root"
+    />
+    <ProdCatalogCategory
+        fromDate="2024-02-28 00:00:00.0"
+        prodCatalogCategoryTypeId="PCCT_PROMOTIONS"
+        prodCatalogId="SHOE_CATALOG"
+        productCategoryId="promotions"
+    />
+    <ProductCategoryRollup
+        fromDate="2024-02-28 00:00:00.0"
+        parentProductCategoryId="browse_root"
+        productCategoryId="mens_category"
+    />
+    <ProductCategoryRollup
+        fromDate="2024-02-28 00:00:00.0"
+        parentProductCategoryId="browse_root"
+        productCategoryId="women_category"
+    />
+    <ProductCategoryRollup
+        fromDate="2024-02-28 00:00:00.0"
+        parentProductCategoryId="browse_root"
+        productCategoryId="children_category"
+    />
+    <ProductCategoryRollup
+        fromDate="2024-02-29 00:00:00.0"
+        parentProductCategoryId="mens_category"
+        productCategoryId="MSports"
+    />
+    <ProductCategoryRollup
+        fromDate="2024-02-29 00:00:00.0"
+        parentProductCategoryId="mens_category"
+        productCategoryId="MFormal"
+    />
+    <ProductCategoryRollup
+        fromDate="2024-02-29 00:00:00.0"
+        parentProductCategoryId="mens_category"
+        productCategoryId="MParty"
+    />
+    <ProductCategoryRollup
+        fromDate="2024-02-29 00:00:00.0"
+        parentProductCategoryId="women_category"
+        productCategoryId="WSports"
+    />
+    <ProductCategoryRollup
+        fromDate="2024-02-29 00:00:00.0"
+        parentProductCategoryId="women_category"
+        productCategoryId="WFormal"
+    />
+    <ProductCategoryRollup
+        fromDate="2024-02-29 00:00:00.0"
+        parentProductCategoryId="women_category"
+        productCategoryId="WParty"
+    />
+</entity-engine-xml>

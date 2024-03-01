@@ -1,0 +1,72 @@
+# Activity - 3
+
+– Promotion
+
+```text
+— MS-1 with Color: White, Brown Size: 7, 8, 9, 10
+— MF-2 with Color: White, Brown Size: 7, 8, 9, 10
+— MP-1 with Color: White, Brown Size: 7, 8, 9, 10
+— WS-1 with Color: White, Brown Size: 7, 8, 9
+— WF-1 with Color: White, Brown Size: 7, 8, 9
+— WP-1 with Color: White, Brown Size: 7, 8
+— C-1 with Color: White, Brown Size: 2, 3, 4, 5
+— C-2 with Color: Red, Black Size: 2, 3, 5
+```
+
+## Solution
+
+### Adding products into promotions category
+
+```xml
+<!-- MS-1 with Color: White, Brown Size: 7, 8, 9, 10  -->
+<ProductCategoryMember
+   fromDate="2024-02-29 20:29:41.0"
+   productCategoryId="promotions"
+   productId="MS-1"
+/>
+
+<!-- MF-2 with Color: White, Brown Size: 7, 8, 9, 10  -->
+<ProductCategoryMember
+   fromDate="2024-02-29 20:29:41.0"
+   productCategoryId="promotions"
+   productId="MF-1"
+/>
+<!-- MP-1 with Color: White, Brown Size: 7, 8, 9, 10  -->
+<ProductCategoryMember
+   fromDate="2024-02-29 20:29:41.0"
+   productCategoryId="promotions"
+   productId="MP-1"
+/>
+<!-- WS-1 with Color: White, Brown Size: 7, 8, 9  -->
+<ProductCategoryMember
+   fromDate="2024-02-29 20:29:41.0"
+   productCategoryId="promotions"
+   productId="WS-1"
+/>
+<!-- WF-1 with Color: White, Brown Size: 7, 8, 9  -->
+<ProductCategoryMember
+   fromDate="2024-02-29 20:29:41.0"
+   productCategoryId="promotions"
+   productId="WF-1"
+/>
+<!-- WP-1 with Color: White, Brown Size: 7, 8  -->
+<ProductCategoryMember
+   fromDate="2024-02-29 20:29:41.0"
+   productCategoryId="promotions"
+   productId="WP-1"
+/>
+<!-- C-1 with Color: White, Brown Size: 2, 3, 4, 5  -->
+<ProductCategoryMember
+   fromDate="2024-02-29 20:29:41.0"
+   productCategoryId="promotions"
+   productId="C-1"
+/>
+<!-- C-2 with Color: Red, Black Size: 2, 3, 5  -->
+<ProductCategoryMember
+   fromDate="2024-02-29 20:29:41.0"
+   productCategoryId="promotions"
+   productId="C-2"
+/>
+```
+
+![alt text](image-35.png)
